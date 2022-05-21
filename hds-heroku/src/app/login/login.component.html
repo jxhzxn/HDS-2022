@@ -1,0 +1,26 @@
+<!-- <body>
+    <p class="title" style="font-size: 60px; text-align: center; color: white; padding-top: 100px;">HDS 2022</p>
+    <div class="login-container" style="margin-top: -150px;">
+        <form #loginForm="ngForm"  class="form-container" (ngSubmit)="createPlayer(loginForm.value)">
+            <input class="form-input" ngModel name="name" type="text" placeholder="Name">
+            <input class="form-input" ngModel name="ticket" type="text" placeholder="#Ticket">
+            <button style="background-color: #FF6363;" class="btn">Log</button>
+        </form>
+    </div>
+</body> -->
+
+<body>
+    <div style="display: flex; justify-content:center; align-items: center; flex-direction:column;">
+        <p class="title" style="font-size: 60px; text-align: center; color: white; padding-top: 100px;">HDS 2022</p>
+        <img src="../../assets/logo.png" width="200px">
+    </div>
+
+
+    <div class="login-container" style="margin-top: -250px;">
+        <form #loginForm="ngForm"  class="form-container" (ngSubmit)="createPlayer(loginForm.value)">
+            <input class="form-input" ngModel name="name" type="text" placeholder="Name">
+            <input class="form-input" ngModel name="ticket" type="text" placeholder="#Ticket">
+            <button style="background-color: #FF6363;" class="btn">Log</button>
+        </form>
+    </div>
+</body>

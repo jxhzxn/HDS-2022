@@ -1,0 +1,25 @@
+<body style="height: 100vh;">
+  <div style="padding-top: 20px; display: flex; justify-content: center; align-items: center;">
+    <div class="equal" style="justify-content: right;"> <img src="../../assets/logo.png" width="150px"></div>
+    <div class="equal"> 
+    <p class="title" style="font-size: 40px; text-align: center; color: white;">LEADERBOARD</p>
+    </div>
+    <div class="equal" style="justify-content: left;"> <img style="margin-left: -120px;" src="../../assets/raciit.png" width="350px"></div>
+   
+  </div>
+  
+<div class="table-container" style="display: flex; flex-wrap: wrap; margin-top: 0px;">
+
+      <div class="card" *ngFor="let player of allPlayers.data; let indexOfelement=index;">
+        <!-- <img src="../../assets/circle.png" alt="Avatar" style="width:250px"> -->
+        <div class="container" style="color: white; margin-top: 25px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <div style="margin-top: -5px;display: flex; justify-content: center; align-items: center; flex-direction: column;" >
+            <p class="mask" style="font-size: 80px;">{{indexOfelement+1}}</p>
+            <p style="transform: rotate(-5deg);">#{{player.ticket}}</p> 
+            <p class="mask" style="font-size: 32px;">{{player.name}}</p>
+            <p style="transform: rotate(-5deg);">{{player.timeTook}} secs</p> 
+          </div>
+        </div>
+      </div>
+</div>
+</body>

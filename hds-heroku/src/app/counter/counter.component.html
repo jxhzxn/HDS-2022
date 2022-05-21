@@ -1,0 +1,28 @@
+<body>
+    <div class="counter-container">
+        <div style="height: 200px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p class="title" style=" font-size: 30px;  transform: rotate(-5deg); color: white;">#{{loggedUserTicket}}</p>
+            <p class="mask" style="font-size: 70px; margin-top: -10px;">{{loggedInUser}}</p>
+           
+        </div>
+        <div style="height: 600px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: -100px;">
+            <div class="btn-container">
+                <button style="background-color: #F9D923;" class="btn" (click)="startTimer()">Start</button>
+                <button style="background-color: #EB5353;" class="btn" (click)="stopTimer()">Stop</button>
+            </div>
+            <div class="timer-container">
+                <p style="font-size: 30px; color: white;">Timer - {{timer}}</p>
+                <p style="font-size: 60px; color: white">{{timeTook}}</p>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <button [disabled]="!timeTook" class="btn save" style="height: 120px; width: 320px;" (click)="addToDB()">Save</button>
+                <button style="background-color: #de2424; height: 60px; width: 320px;" class="btn" (click)="reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+

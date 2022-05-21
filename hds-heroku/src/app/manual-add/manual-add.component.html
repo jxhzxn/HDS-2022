@@ -1,0 +1,10 @@
+<body style="height: 100vh;">
+    <div  style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <form #playerForm="ngForm"  class="form-container" (ngSubmit)="createTeacher(playerForm.value)">
+            <input ngModel name="ticket" type="text" placeholder="#Ticket">
+            <input ngModel name="name" type="text" placeholder="Name">
+            <input ngModel name="timeTook" type="number" placeholder="Time in Secs">
+            <button style="background-color: #FF6363;" class="btn">Add</button>
+        </form>
+    </div>
+</body>
